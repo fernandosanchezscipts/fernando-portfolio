@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Fernando Sanchez</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Fernando Sanchez</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./Logos/profile-pic.png"
+          alt="Fernando Sanchez profile picture"
+        />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Fernando Sanchez</h1>
+        <p class="section__text__p2">Product Compliance Analyst</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='./#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./Logos/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/fernandodsanchez/'"
+          />
+          <img
+            src="./Logos/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/fernandosanchezscipts'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./Logos/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./Logos/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Product Compliance Analyst - H-E-B <br />Industry Experience</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./Logos/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Technical Focus</h3>
+              <p>Java • Python • SQL • APIs <br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I started college convinced I would pursue accounting, drawn to math, structure, and the 
+              clarity of working toward a single correct answer. Over time, I found myself more engaged in building 
+              systems and solving problems through code rather than working purely with numbers. I began expanding 
+              my skills beyond the classroom through independent learning, coursework, and hands on projects, which 
+              helped solidify my interest in software development. Today, I focus on building reliable software and 
+              automations that solve real problems and create practical impact.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Logos/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+
+      <div class="details-container">
+        <h2 class="experience-sub-title">Core Engineering Skills</h2>
+        <div class="article-container">
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Java</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>SQL (Relational Databases)</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Python</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Git</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>RESTful APIs</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Object Oriented Programming</h3>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="details-container">
+        <h2 class="experience-sub-title">Software Engineering Foundations</h2>
+        <div class="article-container">
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Problem Decomposition</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Relational Data Modeling</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>RESTful Architecture</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Software Development Lifecycle</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Debugging Techniques</h3>
+            </div>
+          </article>
+
+          <article>
+            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Code Maintainability</h3>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <img
+    src="./Logos/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#projects'"
+  />
+</section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Logos/project-1.png"
+                alt="F-Analytics"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">F-Analytics</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/fernandosanchezscipts/F-Analytics'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://fernandosanchezscipts-f-analytics-streamlit-app-vfq1vf.streamlit.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Logos/project-2.png"
+                alt="Wizard AI"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Wizard AI</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/fernandosanchezscipts/WizardAI/tree/main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://wizardai.onrender.com'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Logos/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Engineering Productivity Dashboard</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/fernandosanchezscipts/engineering-productivity-dashboard'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://engineering-productivity-dashboard.vercel.app'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Logos/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./Logos/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:fernandosnhz@gmail.com">fernandosnhz@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./Logos/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/fernandodsanchez/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Fernando Sanchez. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
