@@ -77,6 +77,7 @@
   #experience .details-container {
     width: 100%;
     max-width: 520px;
+    box-sizing: border-box;
   }
 
   .contact-info-container {
@@ -115,6 +116,18 @@
 
 @media screen and (max-width: 600px) {
   #experience .article-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 1.5rem;
+  }
+
+  #experience .details-container {
+    width: 100%;
+    max-width: 520px;
+    box-sizing: border-box;
+  }
+
+  #experience .article-container article h3 {
+    font-size: 0.95rem;
+    line-height: 1.2;
   }
 }
