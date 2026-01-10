@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   #contact,
   footer {
     height: 40vh;
@@ -68,6 +68,17 @@
   .btn-container {
     flex-wrap: wrap;
   }
+
+  #experience .about-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #experience .details-container {
+    width: 100%;
+    max-width: 520px;
+  }
+
   .contact-info-container {
     margin: 0;
   }
@@ -99,5 +110,11 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #experience .article-container {
+    grid-template-columns: 1fr;
   }
 }
