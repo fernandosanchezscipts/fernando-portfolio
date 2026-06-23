@@ -2,364 +2,327 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Fernando Sanchez is a junior software engineer and full-stack developer building production web applications, APIs, automation tools, and data dashboards."
+    />
+    <meta name="theme-color" content="#0b0d0c" />
+    <meta property="og:title" content="Fernando Sanchez | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Full-stack applications, workflow automation, and data products built for real-world use."
+    />
+    <title>Fernando Sanchez | Software Engineer</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Fernando Sanchez</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Fernando Sanchez</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Fernando Sanchez, home">
+          <span class="brand-mark">FS</span>
+          <span class="brand-name">Fernando Sanchez</span>
+        </a>
+
+        <div class="desktop-nav" aria-label="Site links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
 
-    <section id="profile">
-      <div class="section__pic-container">
-        <img
-          src="./Logos/profile-pic.png"
-          alt="Fernando Sanchez profile picture"
-        />
-      </div>
+        <a class="nav-resume" href="assets/documents/Fernando-Sanchez-Resume.pdf" target="_blank" rel="noopener">
+          Resume <span aria-hidden="true">↗</span>
+        </a>
 
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Fernando Sanchez</h1>
-        <p class="section__text__p2">Product Compliance Analyst</p>
-
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="location.href='./#contact'"
-          >
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./Logos/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/fernandodsanchez/'"
-          />
-          <img
-            src="./Logos/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/fernandosanchezscipts'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./Logos/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./Logos/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Product Compliance Analyst - H-E-B <br />Industry Experience</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./Logos/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Technical Focus</h3>
-              <p>Java • Python • SQL • APIs <br /></p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I started college convinced I would pursue accounting, drawn to math, structure, and the 
-              clarity of working toward a single correct answer. Over time, I found myself more engaged in building 
-              systems and solving problems through code rather than working purely with numbers. I began expanding 
-              my skills beyond the classroom through independent learning, coursework, and hands on projects, which 
-              helped solidify my interest in software development. Today, I focus on building reliable software and 
-              automations that solve real problems and create practical impact.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Logos/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-<section id="experience">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-
-      <div class="details-container">
-        <h2 class="experience-sub-title">Core Engineering Skills</h2>
-        <div class="article-container">
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Java</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>SQL (Relational Databases)</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Python</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Git</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>RESTful APIs</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Object Oriented Programming</h3>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
-      <div class="details-container">
-        <h2 class="experience-sub-title">Software Engineering Foundations</h2>
-        <div class="article-container">
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Problem Decomposition</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Relational Data Modeling</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>RESTful Architecture</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Software Development Lifecycle</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Debugging Techniques</h3>
-            </div>
-          </article>
-
-          <article>
-            <img src="./Logos/checkmark.png" alt="Experience icon" class="icon" />
-            <div>
-              <h3>Code Maintainability</h3>
-            </div>
-          </article>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <img
-    src="./Logos/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    onclick="location.href='./#projects'"
-  />
-</section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./Logos/project-1.png"
-                alt="F-Analytics"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">F-Analytics</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/fernandosanchezscipts/F-Analytics'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://fernandosanchezscipts-f-analytics-streamlit-app-vfq1vf.streamlit.app'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./Logos/project-2.png"
-                alt="Wizard AI"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Wizard AI</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/fernandosanchezscipts/WizardAI/tree/main'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://wizardai.onrender.com'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./Logos/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Engineering Productivity Dashboard</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/fernandosanchezscipts/engineering-productivity-dashboard'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://engineering-productivity-dashboard.vercel.app'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./Logos/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./Logos/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:fernandosnhz@gmail.com">fernandosnhz@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./Logos/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/fernandodsanchez/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span>
+        </button>
       </nav>
-      <p>Copyright &#169; 2026 Fernando Sanchez. All Rights Reserved.</p>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/documents/Fernando-Sanchez-Resume.pdf" target="_blank" rel="noopener">View resume ↗</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <div class="availability"><span></span> Open to software engineering opportunities</div>
+          <p class="eyebrow">Junior software engineer · Full-stack developer</p>
+          <h1 id="hero-title">I build software that makes real work <em>simpler.</em></h1>
+          <p class="hero-intro">
+            I turn operational problems into reliable web applications, APIs, automations, and data products - from production rental software to internal enterprise workflows.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="mailto:fernandosnhz@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-proof" aria-label="Professional highlights">
+            <div><strong>Production</strong><span>business software</span></div>
+            <div><strong>Full-stack</strong><span>React to APIs</span></div>
+            <div><strong>San Antonio</strong><span>Texas based</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-wrap">
+            <div class="portrait-orbit" aria-hidden="true"></div>
+            <img src="Logos/profile-pic.png" alt="Fernando Sanchez" width="327" height="327" />
+            <div class="portrait-note note-top">
+              <span class="note-icon">01</span>
+              <span><strong>Software engineer</strong>Product-minded builder</span>
+            </div>
+            <div class="portrait-note note-bottom">
+              <span class="pulse" aria-hidden="true"></span>
+              <span><strong>Currently</strong>Product Compliance Analyst · H-E-B</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Technical skills">
+        <div class="marquee-track">
+          <span>JavaScript</span><i>✦</i><span>TypeScript</span><i>✦</i><span>React</span><i>✦</i><span>Python</span><i>✦</i><span>Flask</span><i>✦</i><span>SQL</span><i>✦</i><span>Supabase</span><i>✦</i><span>REST APIs</span><i>✦</i>
+          <span aria-hidden="true">JavaScript</span><i aria-hidden="true">✦</i><span aria-hidden="true">TypeScript</span><i aria-hidden="true">✦</i><span aria-hidden="true">React</span><i aria-hidden="true">✦</i><span aria-hidden="true">Python</span><i aria-hidden="true">✦</i><span aria-hidden="true">Flask</span><i aria-hidden="true">✦</i><span aria-hidden="true">SQL</span><i aria-hidden="true">✦</i><span aria-hidden="true">Supabase</span><i aria-hidden="true">✦</i><span aria-hidden="true">REST APIs</span><i aria-hidden="true">✦</i>
+        </div>
+      </section>
+
+      <section class="section shell" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 · About</p>
+          <h2 id="about-title">Business context.<br /><em>Engineering execution.</em></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <img src="Logos/about-pic.png" alt="Fernando Sanchez outdoors" width="700" height="700" loading="lazy" />
+            <span class="photo-caption">San Antonio, Texas · 2026</span>
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="lead">
+              I bring an operator's eye to software: understand the workflow, find the friction, then build the system that removes it.
+            </p>
+            <p>
+              My path started in accounting and business operations, where accuracy and process matter. Computer science gave me the tools to turn those instincts into production applications. Today I build across the stack while working in product compliance at H-E-B - automating submissions, querying operational data, and partnering with teams to improve how work gets done.
+            </p>
+
+            <div class="about-cards">
+              <article>
+                <span>Education</span>
+                <h3>BBA, Accounting</h3>
+                <p>Minor in Computer Science · UTSA, 2025</p>
+              </article>
+              <article>
+                <span>Approach</span>
+                <h3>Useful over flashy</h3>
+                <p>Reliable systems, clear interfaces, measurable impact.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="experience" aria-labelledby="experience-title">
+        <div class="shell">
+          <div class="section-heading section-heading-row reveal">
+            <div>
+              <p class="eyebrow">02 · Experience</p>
+              <h2 id="experience-title">Where operations meet <em>engineering.</em></h2>
+            </div>
+            <p>Hands-on experience shipping software, automating workflows, validating data, and supporting the people who rely on those systems.</p>
+          </div>
+
+          <div class="experience-layout">
+            <div class="timeline reveal">
+              <article class="timeline-item current">
+                <div class="timeline-meta"><span>2025 - Present</span><span>San Antonio, TX</span></div>
+                <h3>Product Compliance Analyst</h3>
+                <h4>H-E-B</h4>
+                <ul>
+                  <li>Build JavaScript and API-driven workflows that streamline procurement case creation and reduce manual entry.</li>
+                  <li>Write SQL reporting for inventory, suppliers, product classifications, procurement cases, and item setup trends.</li>
+                  <li>Translate cross-functional requirements into documented, reliable operational improvements.</li>
+                </ul>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-meta"><span>2021 - 2025</span><span>San Antonio, TX</span></div>
+                <h3>Service Lead · Cashier · Bagger</h3>
+                <h4>H-E-B</h4>
+                <ul>
+                  <li>Maintained accurate, audit-ready reporting and documentation while supporting high-volume operations.</li>
+                  <li>Partnered across teams to resolve issues, improve processes, and address inventory discrepancies.</li>
+                </ul>
+              </article>
+            </div>
+
+            <aside class="skills-panel reveal" aria-labelledby="skills-title">
+              <p class="eyebrow" id="skills-title">Technical toolkit</p>
+              <div class="skill-group">
+                <span>Languages</span>
+                <div><b>JavaScript</b><b>TypeScript</b><b>Python</b><b>SQL</b><b>HTML</b><b>CSS</b></div>
+              </div>
+              <div class="skill-group">
+                <span>Frontend</span>
+                <div><b>React</b><b>Tailwind CSS</b><b>Responsive UI</b><b>Dashboards</b></div>
+              </div>
+              <div class="skill-group">
+                <span>Backend & data</span>
+                <div><b>Flask</b><b>REST APIs</b><b>Supabase</b><b>Authentication</b><b>CRUD</b></div>
+              </div>
+              <div class="skill-group">
+                <span>Engineering</span>
+                <div><b>Git</b><b>Debugging</b><b>Data validation</b><b>Documentation</b><b>Automation</b></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section shell" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading section-heading-row reveal">
+          <div>
+            <p class="eyebrow">03 · Selected work</p>
+            <h2 id="projects-title">Built to be <em>used.</em></h2>
+          </div>
+          <p>Production software and focused engineering projects spanning full-stack development, automation, AI, and analytics.</p>
+        </div>
+
+        <article class="featured-project reveal">
+          <div class="morales-preview" aria-label="Morales Rental Homes interface preview">
+            <div class="morales-bar">
+              <div class="morales-brand"><span>MP</span><strong>Morales Properties<small>Single-family rental homes</small></strong></div>
+              <div class="morales-nav"><span>Listings</span><span>Requirements</span><span>Resident login</span></div>
+            </div>
+            <div class="morales-content">
+              <div class="morales-copy">
+                <span class="preview-kicker">Available homes only</span>
+                <h3>A clearer way to find your next home.</h3>
+                <div class="preview-button">View available homes →</div>
+              </div>
+              <div class="property-stack">
+                <div class="property-card-mini property-one">
+                  <span>Available</span><strong>Dwyer</strong><small>3 bd · 2 ba · San Antonio</small>
+                </div>
+                <div class="property-card-mini property-two">
+                  <span>Available</span><strong>Family Home</strong><small>3 bd · 2 ba · San Antonio</small>
+                </div>
+              </div>
+            </div>
+            <div class="morales-status"><span><b>01</b> Public listings</span><span><b>02</b> Applicant flow</span><span><b>03</b> Resident portal</span></div>
+          </div>
+
+          <div class="featured-project-copy">
+            <div class="project-meta"><span>Featured · Production</span><span>2026</span></div>
+            <h3>Morales Rental Homes</h3>
+            <p>
+              A production property-management platform built for a real rental business. It brings public listings, applicant registration, showing reservations, resident portals, maintenance requests, lease documents, and admin workflows into one secure experience.
+            </p>
+            <div class="project-outcomes">
+              <span>Role-based access</span><span>Automated SMS & email</span><span>Full CRUD operations</span><span>Ongoing releases</span>
+            </div>
+            <div class="project-stack">React · Supabase · Twilio · Resend</div>
+            <div class="project-links">
+              <a class="button button-primary" href="https://moralesrentalhomes.com" target="_blank" rel="noopener">Visit live app <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <a class="project-image" href="https://engineering-productivity-dashboard.vercel.app" target="_blank" rel="noopener" aria-label="Open Engineering Productivity Dashboard live demo">
+              <img src="assets/projects/engineering-dashboard-cover.png" alt="Engineering productivity dashboard interface" width="1568" height="1003" loading="lazy" />
+              <span>Live demo ↗</span>
+            </a>
+            <div class="project-card-copy">
+              <div class="project-meta"><span>Full-stack dashboard</span><span>01</span></div>
+              <h3>Engineering Productivity Dashboard</h3>
+              <p>A React and Flask tool for tracking throughput, cycle time, delivery health, and issue status with reliable demo-data fallback.</p>
+              <div class="project-stack">React · Flask · REST API · Chart.js</div>
+              <div class="text-links">
+                <a href="https://engineering-productivity-dashboard.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+                <a href="https://github.com/fernandosanchezscipts/engineering-productivity-dashboard" target="_blank" rel="noopener">Source ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-image" href="https://wizardai.onrender.com" target="_blank" rel="noopener" aria-label="Open WizardAI live demo">
+              <img src="assets/projects/wizard-ai-cover.png" alt="WizardAI research assistant interface" width="1568" height="1003" loading="lazy" />
+              <span>Live demo ↗</span>
+            </a>
+            <div class="project-card-copy">
+              <div class="project-meta"><span>Multimodal AI app</span><span>02</span></div>
+              <h3>WizardAI</h3>
+              <p>A GPT-4o assistant supporting text, image, and PDF inputs with session-based chat, file processing, and a custom responsive interface.</p>
+              <div class="project-stack">Flask · JavaScript · GPT-4o · PyMuPDF</div>
+              <div class="text-links">
+                <a href="https://wizardai.onrender.com" target="_blank" rel="noopener">Live demo ↗</a>
+                <a href="https://github.com/fernandosanchezscipts/WizardAI" target="_blank" rel="noopener">Source ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <a class="project-image" href="https://fernandosanchezscipts-f-analytics-streamlit-app-vfq1vf.streamlit.app" target="_blank" rel="noopener" aria-label="Open F-Analytics live demo">
+              <img src="assets/projects/f-analytics-cover.png" alt="F-Analytics executive dashboard interface" width="1586" height="992" loading="lazy" />
+              <span>Live demo ↗</span>
+            </a>
+            <div class="project-card-copy">
+              <div class="project-meta"><span>Data product</span><span>03</span></div>
+              <h3>F-Analytics</h3>
+              <p>An interactive decision-intelligence dashboard for exploring retail KPIs, analyzing trends, and generating AI-assisted business summaries.</p>
+              <div class="project-stack">Python · Streamlit · Pandas · OpenAI</div>
+              <div class="text-links">
+                <a href="https://fernandosanchezscipts-f-analytics-streamlit-app-vfq1vf.streamlit.app" target="_blank" rel="noopener">Live demo ↗</a>
+                <a href="https://github.com/fernandosanchezscipts/F-Analytics" target="_blank" rel="noopener">Source ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-orb" aria-hidden="true"></div>
+        <div class="shell contact-inner reveal">
+          <p class="eyebrow">04 · Contact</p>
+          <h2 id="contact-title">Have a useful problem<br />worth <em>solving?</em></h2>
+          <p>I'm open to software engineering opportunities and conversations about building practical, reliable products.</p>
+          <div class="contact-actions">
+            <a class="button button-light" href="mailto:fernandosnhz@gmail.com">fernandosnhz@gmail.com <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="assets/documents/Fernando-Sanchez-Resume.pdf" target="_blank" rel="noopener">View resume</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <a class="brand" href="#top"><span class="brand-mark">FS</span><span class="brand-name">Fernando Sanchez</span></a>
+      <p>Software engineer building useful systems.</p>
+      <div>
+        <a href="https://www.linkedin.com/in/fernandodsanchez/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/fernandosanchezscipts" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <span>© <span id="year">2026</span></span>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
